@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    font-family: 'inter';
+}
+
+body {
+    margin: 0 auto;
+}
+
+header.header img {
+    width: 70px;
+}
+.change-page {
+    color: white;
+    text-decoration: none;
+}
+
+section.top-page {
+    background: url('../image/ArrierePlanPageWeb.jpg');
+    background-size: cover;
+    height: 80vh;
+    padding: 25px;
+}
+
+/* page de bienvenue */
+
+.landing-page {
+    padding: 20px 50px;
+}
+
+.big-title {
+    color: white;
+    font-size: 80px;
+}
+
+.scroll-down {
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    bottom: 250px;
+}
+
+.fleche {
+    width : 15px;
+    height : 15px;
+}
+
+/* menue de navigation */
+
+header.header {
+    display: flex;
+    align-items: center;
+}
+
+nav.nav {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 200px;
+    margin-left: 30px;
+}
+nav.nav li {
+    color: white;
+}
+
+/* Offre proposé */
+
+.offre {
+    margin-left: 30px;
+    background: url('../image/ArrierePlanPageWeb2.png');
+    background-size: cover;
+    padding: 25px;
+}
+
+
+.section-title {
+    font-size: 70px;
+    position: relative;
+}
+
+.section-title::before {
+    content: "";
+    position: absolute;
+    background-color: #ff7f7f;
+    width: 170px;
+    height: 7px;
+    bottom: 0;
+}
+
+.section-title2 {
+    font-size: 50px;
+    position: relative;
+}
+
+.section-title2::before {
+    content: "";
+    position: absolute;
+    background-color: #ff7f7f;
+    width: 50px;
+    height: 7px;
+    bottom: 0;
+}
+
+.offre-details {
+    margin-left: 80px;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.offre-details2 {
+    margin-left: 80px;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.offre-item {
+    justify-content: space-evenly;
+}
+
+/* back */
+
+.back {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px;
+}
+
+.back-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-position-x: right;
+}
+
+.delivery-icon {
+    font-size: 300px;
+    color: #993844;
+}
+
+/* commande */
+
+.commande {
+    margin-left: 30px;
+    /* background: url('../image/ArrierePlanPageWeb3.png');
+    background-size: cover; */
+    padding: 25px;
+}
+
+.commande-item {
+    justify-content: space-evenly;
+}
+
+.commande-details {
+    margin-left: 80px;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.lien-detail {
+    color: #993844;
+    text-decoration: none;
+}
+
+/* changement de page */
+
+html {
+    scroll-behavior: smooth;
+}

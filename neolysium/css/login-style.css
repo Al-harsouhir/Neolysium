@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    font-family: 'inter';
+}
+
+body {
+    margin: 0 auto;
+}
+
+header.header img {
+    width: 70px;
+}
+.change-page {
+    color: white;
+    text-decoration: none;
+}
+
+section.top-page {
+    background: url('../image/ArrierePlanPageWeb.jpg');
+    background-size: cover;
+    height: 80vh;
+    padding: 25px;
+}
+
+/* menue de navigation */
+
+header.header {
+    display: flex;
+    align-items: center;
+}
+
+nav.nav {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 200px;
+    margin-left: 30px;
+}
+nav.nav li {
+    color: white;
+}
