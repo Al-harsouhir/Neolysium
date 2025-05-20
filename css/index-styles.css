@@ -20,26 +20,26 @@ header.header img {
 section.top-page {
     background-color: #ff5555;
     background-size: cover;
-    height: 80%;
-    padding: 5%;
+    height: 80vh;
+    padding: 25px;
 }
 
 /* page de bienvenue */
 
 .landing-page {
-    padding: 5% 10%;
+    padding: 20px 50px;
 }
 
 .big-title {
     color: white;
-    font-size: 200%;
+    font-size: 80px;
 }
 
 .scroll-down {
     color: white;
     text-decoration: none;
     position: absolute;
-
+    bottom: 250px;
 }
 
 .fleche {
