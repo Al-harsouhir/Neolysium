@@ -18,28 +18,28 @@ header.header img {
 }
 
 section.top-page {
-    background: url('../image/ArrierePlanPageWeb.jpg');
+    background-color: #ff5555;
     background-size: cover;
-    height: 80vh;
-    padding: 25px;
+    height: 80%;
+    padding: 5%;
 }
 
 /* page de bienvenue */
 
 .landing-page {
-    padding: 20px 50px;
+    padding: 5% 10%;
 }
 
 .big-title {
     color: white;
-    font-size: 80px;
+    font-size: 200%;
 }
 
 .scroll-down {
     color: white;
     text-decoration: none;
     position: absolute;
-    bottom: 250px;
+
 }
 
 .fleche {
