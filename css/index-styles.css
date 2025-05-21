@@ -64,6 +64,30 @@ nav.nav li {
     color: white;
 }
 
+
+/* Présentation */
+
+.Presentation {
+    padding: 25px;
+}
+
+
+.Presentation-title {
+    font-size: 50px;
+    text-align: center;
+}
+
+.Presentation-details {
+    font-size: 25px;
+    text-align: center;
+    padding-left: 300px;
+    padding-right: 300px;
+}
+
+.Presentation-item {
+    justify-content: space-evenly;
+}
+
 /* service */
 
 .services {
@@ -82,33 +106,38 @@ nav.nav li {
     font-size: 50px;
 }
 
+.service-title {
+    font-weight: 25px;
+}
+
 .service-details {
-    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
 }
 
-/* Offre proposé */
+/* Réseaux */
 
-.Présentation {
-    margin-left: 30px;
+.reseaux {
     padding: 25px;
-    background-color: beige;
 }
 
 
-.section-title {
+.reseaux-title {
     font-size: 50px;
     text-align: center;
 }
 
-.Presentation-details {
+.reseaux-details {
     font-size: 25px;
     text-align: center;
     padding-left: 300px;
     padding-right: 300px;
 }
 
-.Presentation-item {
-    justify-content: space-evenly;
+.reseaux-item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 /* changement de page */
