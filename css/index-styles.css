@@ -80,8 +80,8 @@ nav.nav li {
 .Presentation-details {
     font-size: 25px;
     text-align: center;
-    padding-left: 300px;
-    padding-right: 300px;
+    margin-left: 27rem;
+    margin-right: 27rem;
 }
 
 .Presentation-item {
