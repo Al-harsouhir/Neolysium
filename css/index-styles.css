@@ -93,7 +93,7 @@ nav.nav li {
 .services {
     display: flex;
     justify-content: space-evenly;
-    margin: 50px;
+    margin: 5rem;
 }
 
 .service-item {
@@ -118,7 +118,11 @@ nav.nav li {
 /* Réseaux */
 
 .reseaux {
-    padding: 25px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 27rem;
+    margin-right: 27rem;
+    margin-bottom: 5rem;
 }
 
 
@@ -138,6 +142,11 @@ nav.nav li {
     display: flex;
     align-items: center;
     flex-direction: column;
+}
+
+.reseaux-lien {
+    color: black;
+    text-decoration: none;
 }
 
 /* changement de page */
