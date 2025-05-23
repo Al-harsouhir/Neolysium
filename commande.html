@@ -5,14 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ServeurMaker</title>
     <link rel="stylesheet" href="css/login-style.css">
-    <link rel="icon" type="image/svg" href="image/logo 2.svg">
+    <link rel=""
+    <link rel="icon" type="image/svg" href="image/image/logo.svg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
     <section class="top-page">
         <header class="header">
-            <img src="image/logo 2.svg" alt="logo du site" href="index.html">
+            <img src="image/logo.svg" alt="logo du site" href="index.html">
             <nav class="nav">
                 <a class="change-page" href="index.html">Accueil</a>
                 <a class="change-page" href="boutique.html">Boutique</a>
@@ -20,5 +21,18 @@
             </nav>
         </header>
     </section>
+    <section>
+        <form id="contact-form">
+            <input type="text" name="user_name" placeholder="Votre nom" required />
+            <input type="email" name="user_email" placeholder="Votre e-mail" required />
+            <input type="text" name="user_discord" placeholder="Votre Discord (ex: nom#0000)" required />
+            <input type="text" name="subject" placeholder="Sujet" required />
+            <textarea name="message" placeholder="Votre message" required></textarea>
+            <input type="hidden" name="date" id="form-date" />
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
 </body>
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script src="/neolysium/js/comande.js"></script>
 </html>
