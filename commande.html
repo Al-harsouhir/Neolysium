@@ -30,23 +30,16 @@
             <textarea id="message" name="message" placeholder="Message"></textarea>
             <button type="submit">Envoyer</button>
         </form>
-
-        <!-- SCRIPTS en bas de page -->
-        <!-- 1. Charge la librairie EmailJS -->
         <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-
-        <!-- 2. Initialise EmailJS UNIQUEMENT quand la lib est prête -->
         <script>
             document.addEventListener("DOMContentLoaded", function () {
                 if (typeof emailjs !== "undefined") {
-                emailjs.init("EtOU6ZVqIlhv6rbxo"); // Ta clé publique EmailJS
+                    emailjs.init("EtOU6ZVqIlhv6rbxo"); // Ta clé publique EmailJS
                 } else {
-                console.error("EmailJS non chargé !");
+                    console.error("EmailJS non chargé !");
                 }
             });
         </script>
-
-        <!-- 3. Ton script perso -->
         <script src="js/commande.js"></script>
     </section>
 </body>
