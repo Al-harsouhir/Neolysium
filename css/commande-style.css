@@ -17,9 +17,9 @@ header.header img {
 }
 
 section.top-page {
-    background: url('../image/ArrierePlanPageWeb.jpg');
+    background-color: #ff5555;
     background-size: cover;
-    height: 80vh;
+    height: 50vh;
     padding: 25px;
 }
 
@@ -34,7 +34,7 @@ nav.nav {
     display: flex;
     justify-content: space-between;
     list-style: none;
-    width: 200px;
+    width: 300px;
     margin-left: 30px;
 }
 nav.nav li {
