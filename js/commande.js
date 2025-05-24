@@ -1,22 +1,16 @@
-// Initialisation d'EmailJS avec ta clé publique
-emailjs.init("EtOU6ZVqIlhv6rbxo");
+document.getElementById("mon-formulaire").addEventListener("submit", function (e) {
+  e.preventDefault();
 
-const form = document.getElementById("contact-form");
+  const date = new Date().toLocaleString();
 
-form.addEventListener("submit", function (event) {
-  event.preventDefault();
-
-  // Génère automatiquement la date actuelle
-  const now = new Date();
-  const formattedDate = now.toLocaleString(); // Format lisible (ex: 24/05/2025, 16:30:01)
-  document.getElementById("form-date").value = formattedDate;
-
-  // Envoie du formulaire via EmailJS
-  emailjs.sendForm("service_k7boi3m", "template_mf2m5pc", form)
-    .then(() => {
-      alert("Message envoyé avec succès !");
-      form.reset();
-    }, (error) => {
-      alert("Erreur : " + JSON.stringify(error));
-    });
+  emailjs.send("service_k7boi3m", "template_mf2m5pc", {
+    name: document.getElementById("name").value,
+    email: document.getElementById("email").value,
+    discord: document.getElementById("discord").value,
+    subject: document.getElementById("subject").value,
+    message: document.getElementById("message").value,
+    time: date
+  })
+  .then(() => alert("Message envoyé avec succès !"))
+  .catch((error) => console.error("Erreur EmailJS :", error));
 });
