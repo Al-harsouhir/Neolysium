@@ -11,6 +11,7 @@ body {
 header.header img {
     width: 70px;
 }
+
 .change-page {
     color: white;
     text-decoration: none;
@@ -39,4 +40,18 @@ nav.nav {
 }
 nav.nav li {
     color: white;
+}
+
+/* commande input */
+ 
+.commande {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+}
+
+.commande-item {
+    display: flex;
+    text-align: center;
 }
