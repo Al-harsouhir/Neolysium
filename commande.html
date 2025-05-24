@@ -21,26 +21,34 @@
         </header>
     </section>
     <section>
-                <!-- Formulaire -->
-        <form id="mon-formulaire">
-            <input id="name" name="name" placeholder="Votre nom" />
-            <input id="email" name="email" placeholder="Votre email" />
-            <input id="discord" name="discord" placeholder="Votre Discord" />
-            <input id="subject" name="subject" placeholder="Sujet" />
-            <textarea id="message" name="message" placeholder="Message"></textarea>
-            <button type="submit">Envoyer</button>
-        </form>
-        <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-        <script>
-            document.addEventListener("DOMContentLoaded", function () {
-                if (typeof emailjs !== "undefined") {
-                    emailjs.init("EtOU6ZVqIlhv6rbxo"); // Ta clé publique EmailJS
-                } else {
-                    console.error("EmailJS non chargé !");
-                }
+        <script type="module">
+        import emailjs from 'https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js';
+
+        emailjs.init("EtOU6ZVqIlhv6rbxo");
+
+        const form = document.getElementById("mon-formulaire");
+
+        if (form) {
+            form.addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            const date = new Date().toLocaleString();
+
+            emailjs.send("VOTRE_SERVICE_ID", "VOTRE_TEMPLATE_ID", {
+                name: document.getElementById("name").value,
+                email: document.getElementById("email").value,
+                discord: document.getElementById("discord").value,
+                subject: document.getElementById("subject").value,
+                message: document.getElementById("message").value,
+                time: date,
+            })
+            .then(() => alert("Message envoyé avec succès !"))
+            .catch((error) => console.error("Erreur EmailJS :", error));
             });
+        } else {
+            console.error("Formulaire introuvable !");
+        }
         </script>
-        <script src="js/commande.js"></script>
     </section>
 </body>
 </html>
