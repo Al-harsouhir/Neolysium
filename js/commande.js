@@ -3,9 +3,19 @@ document.addEventListener("DOMContentLoaded", function () {
         emailjs.init("EtOU6ZVqIlhv6rbxo");
 
         const form = document.getElementById("mon-formulaire");
+        const lastSentKey = "emailjs_last_sent";
+
         if (form) {
             form.addEventListener("submit", function (e) {
                 e.preventDefault();
+
+                const now = Date.now();
+                const lastSent = localStorage.getItem(lastSentKey);
+
+                if (lastSent && now - lastSent < 5 * 60 * 1000) {
+                    alert("Tu dois attendre 5 minutes avant de renvoyer un message.");
+                    return;
+                }
 
                 const date = new Date().toLocaleString();
 
@@ -17,7 +27,10 @@ document.addEventListener("DOMContentLoaded", function () {
                     message: document.getElementById("message").value,
                     time: date,
                 })
-                .then(() => alert("Message envoyé avec succès !"))
+                .then(() => {
+                    localStorage.setItem(lastSentKey, Date.now());
+                    alert("Message envoyé avec succès !");
+                })
                 .catch((error) => console.error("Erreur EmailJS :", error));
             });
         } else {
