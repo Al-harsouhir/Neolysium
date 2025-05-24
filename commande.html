@@ -20,25 +20,27 @@
             </nav>
         </header>
     </section>
-    <section class="commande">
-        <form id="mon-formulaire">
-            <label for="name">Nom :</label>
-            <input class="commande-item" type="text" id="name" required><br>
+    <section class="body">
+        <div class="contenaire">
+            <form class="entrer" id="mon-formulaire">
+                <input type="text" id="name" required>
+                <label class="commande-item" for="name">Nom :</label><br>
 
-            <label for="email">Email :</label>
-            <input class="commande-item" type="email" id="email" required><br>
+                <input type="email" id="email" required>
+                <label class="commande-item" for="email">Email :</label><br>
 
-            <label for="discord">Discord :</label>
-            <input class="commande-item" type="text" id="discord" required><br>
+                <input type="text" id="discord" required>
+                <label class="commande-item" for="discord">Discord :</label><br>
 
-            <label for="subject">Sujet :</label>
-            <input class="commande-item" type="text" id="subject" required><br>
+                <input type="text" id="subject" required>
+                <label class="commande-item" for="subject">Sujet :</label><br>
 
-            <label for="message">Message :</label>
-            <textarea class="commande-item" id="message" required></textarea><br>
-
-            <button class="commande-item" type="submit">Envoyer</button>
-        </form>
+                <input id="message" required></input>
+                <label class="commande-item" for="message">Message :</label><br>
+                
+                <button class="commande-item" type="submit">Envoyer</button>
+            </form>
+        </div>
     </section>
     <section>
         <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
