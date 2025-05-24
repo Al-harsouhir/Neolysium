@@ -8,11 +8,6 @@
     <link rel="icon" type="image/svg" href="image/logo.svg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3.11.0/dist/email.min.js"></script>
-    <script>
-        emailjs.init("EtOU6ZVqIlhv6rbxo");
-    </script>
-    <script src="js/commande.js"></script>
 </head>
 <body>
     <section class="top-page">
@@ -26,15 +21,33 @@
         </header>
     </section>
     <section>
-        <form id="contact-form">
-            <input type="text" name="user_name" placeholder="Votre nom" required />
-            <input type="email" name="user_email" placeholder="Votre e-mail" required />
-            <input type="text" name="user_discord" placeholder="Votre Discord (ex: nom#0000)" required />
-            <input type="text" name="subject" placeholder="Sujet" required />
-            <textarea name="message" placeholder="Votre message" required></textarea>
-            <input type="hidden" name="date" id="form-date" />
+                <!-- Formulaire -->
+        <form id="mon-formulaire">
+            <input id="name" name="name" placeholder="Votre nom" />
+            <input id="email" name="email" placeholder="Votre email" />
+            <input id="discord" name="discord" placeholder="Votre Discord" />
+            <input id="subject" name="subject" placeholder="Sujet" />
+            <textarea id="message" name="message" placeholder="Message"></textarea>
             <button type="submit">Envoyer</button>
         </form>
+
+        <!-- SCRIPTS en bas de page -->
+        <!-- 1. Charge la librairie EmailJS -->
+        <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+        <!-- 2. Initialise EmailJS UNIQUEMENT quand la lib est prête -->
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                if (typeof emailjs !== "undefined") {
+                emailjs.init("EtOU6ZVqIlhv6rbxo"); // Ta clé publique EmailJS
+                } else {
+                console.error("EmailJS non chargé !");
+                }
+            });
+        </script>
+
+        <!-- 3. Ton script perso -->
+        <script src="js/commande.js"></script>
     </section>
 </body>
 </html>
