@@ -22,7 +22,7 @@
     </section>
     <section>
         <script type="module">
-        import emailjs from 'https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js';
+        import { emailjs } from 'https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js';
 
         emailjs.init("EtOU6ZVqIlhv6rbxo");
 
@@ -34,7 +34,7 @@
 
             const date = new Date().toLocaleString();
 
-            emailjs.send("VOTRE_SERVICE_ID", "VOTRE_TEMPLATE_ID", {
+            emailjs.send("TON_SERVICE_ID", "TON_TEMPLATE_ID", {
                 name: document.getElementById("name").value,
                 email: document.getElementById("email").value,
                 discord: document.getElementById("discord").value,
