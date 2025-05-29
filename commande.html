@@ -10,34 +10,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
+    <nav class="nav-bar">
+        <div class="logo-titre">
+            <a class="logo-titre-item" href="index.html"><img src="image/logo.svg" alt="logo du site"></a>
+            <h1 class="logo-titre-item">Néolysium</h1>
+        </div>
+        <ul class="liste">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="boutique.html">Boutique</a></li>
+            <li><a href="commande.html">Commande</a></li>
+        </ul>
+    </nav>
     <section class="top-page">
-        <header class="header">
-            <a href="index.html"><img src="image/logo.svg" alt="logo du site"></a>
-            <nav class="nav">
-                <a class="change-page" href="index.html">Accueil</a>
-                <a class="change-page" href="boutique.html">Boutique</a>
-                <a class="change-page" href="commande.html">Commande</a>
-            </nav>
-        </header>
+        <div class="landing-page">
+            <h1 class="big-title">Vous pourez commander en remplicent les information en dessous</h1>
+        </div>
     </section>
-    <section class="body">
+    <section class="commande">
         <div class="contenaire">
             <form class="entrer" id="mon-formulaire">
-                <input type="text" id="name" required>
+                <input type="text" id="name" required></input>
                 <label class="commande-item" for="name">Nom :</label><br>
-
-                <input type="email" id="email" required>
+                <input type="email" id="email" required></input>
                 <label class="commande-item" for="email">Email :</label><br>
-
-                <input type="text" id="discord" required>
+                <input type="text" id="discord" required></input>
                 <label class="commande-item" for="discord">Discord :</label><br>
-
-                <input type="text" id="subject" required>
+                <input type="text" id="subject" required></input>
                 <label class="commande-item" for="subject">Sujet :</label><br>
-
-                <input id="message" required></input>
+                <input type="message" id="message" required></input>
                 <label class="commande-item" for="message">Message :</label><br>
-                
                 <button class="commande-item" type="submit">Envoyer</button>
             </form>
         </div>
