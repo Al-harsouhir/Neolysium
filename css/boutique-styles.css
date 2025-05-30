@@ -31,7 +31,7 @@ body {
 .nav-bar h1 {
     font-size: 40px;
     color: white;
-    margin-left: 3vh;
+    margin-left: 2em;
 }
 
 .nav-bar {
@@ -40,7 +40,7 @@ body {
     background-color:#ff5555;
     background-size: cover;
     height: 5vh;
-    padding: 2vh;
+    padding: 2%;
     justify-content: space-between;
     position: fixed;
     top: 0;
@@ -52,7 +52,7 @@ body {
     display: flex;
     justify-content: space-around;
     list-style-type: none;
-    width: 20em;
+    width: 30em;
     padding-right: 5em;
     align-items: center;
 }
@@ -64,7 +64,7 @@ li {
 li a {
     color: white;
     text-decoration: none;
-    padding: 6px;
+    padding: 1em;
 }
 
 li a:hover {
@@ -75,9 +75,9 @@ li a:hover {
     background-color: white;
     color: #ff5555;
     padding-top: 2vh;
-    padding-bottom: 4vh;
-    padding-left: 6px;
-    padding-right: 6px;
+    padding-bottom: 6vh;
+    padding-left: 1em;
+    padding-right: 1em;
 } 
 
 /* page de bienvenue */
@@ -87,7 +87,7 @@ section.top-page {
 }
 
 .landing-page {
-    margin: 30px 60px;
+    margin: 2vh 2em;
     margin-top: 10vh;
     display: flex;
     align-items: center;
@@ -96,7 +96,13 @@ section.top-page {
 }
 
 .big-title {
-    font-size: 50px;
+    font-size: 3.5em;
+}
+
+/* Présentation */
+
+.Presentation {
+    margin: 1.5em;
 }
 
 /* Présentation */
