@@ -33,7 +33,7 @@ body {
 .nav-bar h1 {
     font-size: 40px;
     color: white;
-    margin-left: 3vh;
+    margin-left: 2em;
 }
 
 .nav-bar {
@@ -42,7 +42,7 @@ body {
     background-color:#ff5555;
     background-size: cover;
     height: 5vh;
-    padding: 2vh;
+    padding: 2%;
     justify-content: space-between;
     position: fixed;
     top: 0;
@@ -54,7 +54,7 @@ body {
     display: flex;
     justify-content: space-around;
     list-style-type: none;
-    width: 20em;
+    width: 30em;
     padding-right: 5em;
     align-items: center;
 }
@@ -66,7 +66,7 @@ li {
 li a {
     color: white;
     text-decoration: none;
-    padding: 6px;
+    padding: 1em;
 }
 
 li a:hover {
@@ -77,9 +77,9 @@ li a:hover {
     background-color: white;
     color: #ff5555;
     padding-top: 2vh;
-    padding-bottom: 4vh;
-    padding-left: 6px;
-    padding-right: 6px;
+    padding-bottom: 6vh;
+    padding-left: 1em;
+    padding-right: 1em;
 } 
 
 /* page de bienvenue */
@@ -89,7 +89,7 @@ section.top-page {
 }
 
 .landing-page {
-    margin: 30px 60px;
+    margin: 2vh 2em;
     margin-top: 10vh;
     display: flex;
     align-items: center;
@@ -98,7 +98,7 @@ section.top-page {
 }
 
 .big-title {
-    font-size: 50px;
+    font-size: 3.5em;
 }
 
 /* Présentation */
@@ -109,12 +109,12 @@ section.top-page {
 
 
 .Presentation-title {
-    font-size: 50px;
+    font-size: 3.5em;
     text-align: center;
 }
 
 .Presentation-details {
-    font-size: 25px;
+    font-size: 1.6em;
     text-align: center;
     margin-left: 27rem;
     margin-right: 27rem;
@@ -139,15 +139,15 @@ section.top-page {
 }
 
 .delivery-icon {
-    font-size: 50px;
+    font-size: 3.5em;
 }
 
 .service-title {
-    font-weight: 25px;
+    font-weight: 1.9em;
 }
 
 .service-details {
-    font-size: 20px;
+    font-size: 1.3em;
     text-align: center;
 }
 
@@ -163,15 +163,15 @@ section.top-page {
 
 
 .reseaux-title {
-    font-size: 50px;
+    font-size: 3.5em;
     text-align: center;
 }
 
 .reseaux-details {
-    font-size: 25px;
+    font-size: 1.3em;
     text-align: center;
-    padding-left: 300px;
-    padding-right: 300px;
+    padding-left: 5em;
+    padding-right: 5em;
 }
 
 .reseaux-item {
@@ -186,7 +186,7 @@ section.top-page {
 }
 
 .reseaux-item:hover {
-    font-size: 2vh;
+    font-size: 1.3em;
 }
 
 /* changement de page */
