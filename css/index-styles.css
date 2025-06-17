@@ -3,6 +3,7 @@
 
 * {
     font-family: 'inter';
+    box-sizing: border-box;
 }
 
 body {
