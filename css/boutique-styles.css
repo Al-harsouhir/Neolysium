@@ -137,7 +137,6 @@ section.top-page {
     align-items: center;
     height: 30vh;
 }
-
 .cart-item {
     padding: 16px;
     width: 300px;
@@ -149,11 +148,13 @@ section.top-page {
     cursor: pointer;
     max-height: 380px;
     margin: 2vh;
+    height: 200px;
 }
 
 .cart-item.expanded {
     width: 80vw;
     max-height: 60vh;
+    height: auto;
 }
 
 .cart-item img {
